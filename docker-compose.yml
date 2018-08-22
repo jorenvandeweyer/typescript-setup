@@ -6,6 +6,7 @@ services:
       - ./src/:/usr/src/app/src/
       - ./test/:/usr/src/app/test/
       - ./config.json:/user/src/app/config.json
+    restart: on-failure
 networks:
   dupbit_prime:
     external: true
